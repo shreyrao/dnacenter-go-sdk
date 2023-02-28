@@ -267,7 +267,7 @@ type ResponseDevicesGetDeviceDetailResponse struct {
 	PacketPool             string `json:"packetPool,omitempty"`             // Packet Pool
 	FreeTimer              string `json:"freeTimer,omitempty"`              // Free Timer
 	Location               string `json:"location,omitempty"`               // Location
-	Timestamp              string `json:"timestamp,omitempty"`              // Timestamp
+	Timestamp              *int   `json:"timestamp,omitempty"`              // Timestamp
 }
 type ResponseDevicesGetDeviceEnrichmentDetails []ResponseItemDevicesGetDeviceEnrichmentDetails // Array of ResponseDevicesGetDeviceEnrichmentDetails
 type ResponseItemDevicesGetDeviceEnrichmentDetails struct {
